@@ -12,7 +12,8 @@ Why Choose **[711Proxy](https://www.711proxy.com/?utm_t=1&utm_i=441)**?
 import requests
 
 proxies = {
-    'http': 'http://username:password@global.rotgb.711proxy.com:10000',
+    'http': 'http://username:password@proxy_ip:proxy_port',
+    'https': 'http://username:password@proxy_ip:proxy_port'
 }
 
 try:
@@ -28,6 +29,7 @@ pip install requests[socks]
 Then it can be used like this:
 ```
 proxies = {
-    'http': 'socks5://user:pass@global.rotgb.711proxy.com:10000',
+    'http': 'socks5://user:pass@host:port',
+    "https": "socks5://user:pass@host:port",
 }
 ```
