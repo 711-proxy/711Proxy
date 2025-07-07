@@ -21,3 +21,13 @@ try:
 except requests.exceptions.RequestException as e:
     print(f"Request Failed: {e}")
 ```
+For SOCKS Proxies, you may need to install additional packages such as requests[socks]:
+```
+pip install requests[socks]
+```
+Then it can be used like this:
+```
+proxies = {
+    'http': 'socks5://user:pass@global.rotgb.711proxy.com:10000',
+}
+```
